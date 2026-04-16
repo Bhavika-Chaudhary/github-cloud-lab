@@ -37,8 +37,7 @@ jobs:
         if: always()
         with:
           name: test-results
-          path: |
-            .pytest_cache/
+          path: .
           retention-days: 7
 
   build-and-push:
